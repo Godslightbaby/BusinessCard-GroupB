@@ -5,19 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BusinessCard</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" name="name" id="name" required>
-            <label for="gender">Gender:</label>
-            <input type="text" name="gender" id="gender" required>
-            <label for="address">Address:</label>
-            <input type="text" name="address" id="address" required>
-            <button type="submit">Submit</button>
-        </form>
-        <script src="./card.js"></script>
+    <div class="profilecard">
+    <h1>Business Card</h1>
+    <button class="btnpro">
+        <a href="./final.html" class="profile">Profile</a>
+    </button>
+</div>
+<main>
+    <form>
+        <h2 class="heading">User Details</h2>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required>
+        <label for="gender">Gender:</label>
+        <input type="text" name="gender" id="gender" required>
+        <label for="address">Address:</label>
+        <input type="text" name="address" id="address" required>
+        <button  type="submit">Generate</button>
+    </form>
+    <div class="bizCard">
+        <img src="bizimg.jpg" alt="" class="design">
+        <div id="info">
+        <p></p>
+        <p></p>
+        <p></p>
+        </div>
+    </div>
+    </main>
+    <section id="dwnbtn">
+        <button id="dwn" onclick="screenshot()">Download</button>
+        <div class="mainTemp">
+        <button class="temp" id="1">Temp1</button>
+        <button class="temp" id="2">Temp2</button>
+        <button class="temp" id="3">Temp3</button>
+        </div>
+    </section>
+    <script src="./card.js"></script>
 </body>
 </html>
