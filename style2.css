@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.design{
+    height: 300px;
+    border-top-left-radius: 5px;
+    /* border-bottom-left-radius: 5px; */
+    width: 150px;
+}
+.bizCard{
+    display: flex;
+    flex-direction: column;
+}
+.card{
+    width: 500px;
+    height: 300px;
+    border:  black;
+  display: flex;
+    border-radius: 10px;
+    background-color: rgb(236, 229, 229);
+    box-shadow: 2px 3px 3px 5px gray;
+    display: flex;
+    margin: 100px auto;
+
+}
+button{
+    border-radius: 10px;
+    /* height: 50px; */
+    padding: 10px;
+    box-shadow: 5px 5px 5px gray ;
+    border: none;
+    margin: auto;
+    width: fit-content;
+}
+.home{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(146, 103, 46);
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+

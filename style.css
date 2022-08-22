@@ -1,0 +1,167 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+main{
+    /* height: 100vh; */
+    /* border: solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.heading{
+    align-items: center;
+}
+
+input{
+    height: 30px;
+    width: 300px;
+    border-radius: 10px;
+    border: none;
+}
+
+button{
+    margin-top: 20px;
+    border-radius: 10px;
+    height: 30px;
+    box-shadow: 5px 5px 5px gray ;
+    border: none;
+}
+
+form{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 500px;
+    border-radius: 10px;
+    /* border: solid; */
+    align-items: center;
+    background-color: bisque;
+    border: black;
+    box-shadow: 2px 3px 3px 5px gray; 
+}
+
+.bizCard{
+    width: 500px;
+    height: 300px;
+    border:  black;
+  display: flex;
+    border-radius: 10px;
+    box-shadow: 2px 3px 3px 5px gray;
+    background-color: rgb(236, 229, 229);
+}
+label{
+    width: 10px;
+}
+.profile{ 
+    color: rgb(146, 103, 46);
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: bold;
+    /* background-color: rgb(236, 206, 170); */
+    border-radius: 10px;
+    /* height: 70px; */
+}
+.profilecard{
+     /* border: solid red; */
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+    
+
+ }
+
+ 
+#profileBtn{
+    border-radius: 10px;
+    background-color: antiquewhite;
+    font-weight: bold;
+    padding: 10px;
+    /* color: white; */
+    /* justify-content: center; */
+    justify-items: center;
+}
+h1{
+    /* text-align: center; */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    color: rgb(146, 103, 46);
+}
+#dwn{
+    height: 50px;
+    width: 100px;
+}
+.btnpro{
+    height: 40px;
+}
+#dwnbtn{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.temp{
+    height: 50px;
+    width: 80px;
+    margin: 10px;
+}
+.mainTemp{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+}
+.design{
+    height: 300px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 150px;
+}
+
+@media only screen and (max-width: 600px){
+    main{
+        /* height: 100vh; */
+        /* border: solid red; */
+        display: block;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    .bizCard{
+        width: 500px;
+        height: 300px;
+        border: solid black;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+    #dwnbtn{
+        display: flex;
+        flex-direction: column;
+        /* align-self: flex-end; */
+        /* align-items: center; */
+        /* justify-content: center; */
+        align-content: center;
+        margin-top: 50px;
+    }
+}
+
+
+/* @media print {
+    @page{
+size: 12cm 12.5cm;
+    }
+    body{
+        visibility: hidden;
+    }
+    #info{
+position: absolute;
+top: 0px;
+padding: 0px;
+visibility: visible;
+    }
+} */
